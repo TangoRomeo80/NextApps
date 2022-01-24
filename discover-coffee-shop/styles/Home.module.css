@@ -20,7 +20,6 @@
 }
 
 .cardLayout {
-  margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   column-gap: 1.5rem;
@@ -35,7 +34,7 @@
   font-size: 2.25rem;
   line-height: 2.5rem;
   padding-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
   color: var(--text-white-100);
 }
 
