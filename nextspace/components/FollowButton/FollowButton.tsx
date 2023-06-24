@@ -14,12 +14,11 @@ export default async function FollowButton({ targetUserId }: Props) {
     .findFirst({ where: { email: session?.user?.email! } })
     .then((user) => user?.id!)
 
-  //   const isFollowing = await prisma.follows.findFirst({
-  //     where: { followerId: currentUserId, followingId: targetUserId },
-  //   })
+  const isFollowing = await prisma.follows.findFirst({
+    where: { followerId: currentUserId, followingId: targetUserId },
+  })
 
   return (
-    // <FollowClient targetUserId={targetUserId} isFollowing={!!isFollowing} />
-    <FollowClient targetUserId={targetUserId} isFollowing={true} />
+    <FollowClient targetUserId={targetUserId} isFollowing={!!isFollowing} />
   )
 }
