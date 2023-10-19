@@ -1,4 +1,5 @@
 import { Hero, SearchBar, CustomFilter } from '@/components'
+import { fuels, yearsOfProduction } from '@/constants'
 import Image from 'next/image'
 
 export default function Home() {

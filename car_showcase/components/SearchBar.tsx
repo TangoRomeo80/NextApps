@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-// import SearchManufacturer from './SearchManufacturer'
+import { SearchManufacturer } from './'
 
 const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
   <button type='submit' className={`-ml-3 z-10 ${otherClasses}`}>
@@ -61,10 +61,10 @@ const SearchBar = () => {
   return (
     <form className='searchbar' onSubmit={handleSearch}>
       <div className='searchbar__item'>
-        {/* <SearchManufacturer
+        <SearchManufacturer
           manufacturer={manufacturer}
           setManuFacturer={setManuFacturer}
-        /> */}
+        />
         <SearchButton otherClasses='sm:hidden' />
       </div>
       <div className='searchbar__item'>
