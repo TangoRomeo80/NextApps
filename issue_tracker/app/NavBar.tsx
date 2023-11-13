@@ -13,7 +13,7 @@ const NavBar = () => {
   // link objects are used to generate the links in the navbar
   const links = [
     { label: 'Dashboard', href: '/' },
-    { label: 'Issues', href: '/issues' },
+    { label: 'Issues', href: '/issues/list' },
   ]
 
   return (
